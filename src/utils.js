@@ -14,7 +14,6 @@ import view from 'ramda/es/view';
 const idEq = propEq('id');
 const postIdEq = propEq('postId');
 const userIdEq = propEq('userId');
-const withoutId = dissoc('id');
 const withoutPostId = dissoc('postId');
 const withoutUserId = dissoc('userId');
 
@@ -25,7 +24,7 @@ const setId = set(idLens);
 const userIdLens = lensProp('userId');
 const getUserId = view(userIdLens);
 
-const resetIds = (item, i) => setId(i, withoutId(item));
+const resetIds = (item, i) => setId(i, item);
 
 // I'm creating higher order functions here to use in map later,
 // but I'm not sure if this is something I should be doing entirely with Ramda's API.
