@@ -12,6 +12,7 @@
   "author": "Zanchi <emzanchi@gmail.com> (https://github.com/zanchi)",
   "license": "MIT",
   "devDependencies": {
+    "babel-plugin-syntax-object-rest-spread": "^6.13.0",
     "eslint": "^4.19.1",
     "eslint-config-gsandf": "^1.0.0",
     "parcel-bundler": "^1.8.1"
