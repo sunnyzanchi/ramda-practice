@@ -33,8 +33,7 @@ const resetIds = (item, i) => setId(i, item);
 // but I'm not sure if this is something I should be doing entirely with Ramda's API.
 export const joinPostWithComments = comments => post => merge(
   post, {
-    // The nesting is getting a lil deep here, maybe a spot to use the |> operator? 👀
-    // Also, I know lenses can be composed and they don't mutate the original object,
+    // I know lenses can be composed and they don't mutate the original object,
     // but I don't really need that here. Is it better to be pragmatic and just do
     // `postIdEq(post.userId)`? I think `getUserId` looks really straighforward, no question what
     // it does, but I definitely don't think it looks like idiomatic JavaScript 🤔
